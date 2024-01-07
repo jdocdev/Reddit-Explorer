@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  width: 90%;
+  background-color: #dae0e6;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  height: 100vh;
+  align-items: start;
+}
+
+.topics-container {
+  max-width: 40%;
+  margin-top: 2rem;
+}
+
+.header,
+.description-app {
+  color: #1c1c1c;
+  background-color: #ffffff;
+  margin: auto;
+  margin-bottom: 1rem;
+  padding: 2em;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header img {
+  height: 2.5rem;
+  margin-right: 10px;
+}
+
+.description-app {
+  margin-bottom: 0.5rem;  
+}
+
+.description-app p {
+  margin-bottom: 1rem;
+  color: #1c1c1c;
+}
+
+.topics {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  color: #1c1c1c;
+}
+
+.topic {
+  margin: 0.5rem;
+  padding: 1rem;
+  cursor: pointer;
+  color: #1c1c1c;
+  background-color: #ffffff;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.topic:hover {
+  background-color: #ff4500;
+  color: #ffffff;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Detalles topic */
+.topics-details-container {
+  max-width: 58%;
+  margin-top: 2rem;
+  background-color: #ffffff;
+  border-radius: 5px;
+  margin: 1rem;
+  margin-top: 2rem;
+  padding: 2rem; 
+}
+
+.details > * {
+  margin-bottom: 1rem;
+}
+
+.details h2 {
+  font-size: 1.5rem;
+  color: #1c1c1c;
+}
+
+.details img {
+  width: 100%;
+  height: auto;
+}
+
+.public_description {
+  font-weight: 400;
+  color: #1c1c1c;
+}
+
+.description {
+  font-weight: 300;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 9;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+  margin-bottom: 2rem;
+  color: #1c1c1c;
+  font-size: 0.9rem;
+}
+
+/* estilos ambos botones */
+.details a,
+.description-app button {
+  background-color: #0079d3;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 1rem;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+  border: none;
+}
+
+.details a:hover,
+.description-app button:hover {
+  background-color: #ff4500;
+  transition: background-color 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 1600px) {
+  body {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 1370px) {
+  .topic {
+    padding: 0.8rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .topic {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .topics-container {
+    margin-bottom: 0.5rem;
+  }
+
+  .topics-details-container {
+    margin: 0;
+  }
+
+  .topics-container,
+  .topics-details-container {
+    max-width: 100%;
+  }
+}
